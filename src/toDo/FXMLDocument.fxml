@@ -22,12 +22,11 @@
                   <TableColumn id="tc1" fx:id="tc1" prefWidth="64.0" text="No." />
                   <TableColumn id="tc2" fx:id="tc2" prefWidth="204.0" text="Date" />
                   <TableColumn id="tc3" fx:id="tc3" prefWidth="120.0" text="Owner" />
-                  <TableColumn id="tc4" fx:id="tc4" prefWidth="288.0" text="Task" />
-                  <TableColumn id="tc1" fx:id="tc11" prefWidth="46.0" />
+                  <TableColumn id="tc4" fx:id="tc4" prefWidth="334.0" text="Task" />
                </columns></TableView>
             <Label id="DateLabel" fx:id="DateLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="232.0" layoutY="391.0" prefHeight="44.0" prefWidth="100.0" text="Date" />
-            <Button id="DelButton" fx:id="DelButton" layoutX="738.0" layoutY="492.0" prefHeight="54.0" prefWidth="100.0" text="Delete" onAction="#delButtonAction"/>
-            <Button id="ExpButton" fx:id="ExpButton" layoutX="738.0" layoutY="566.0" prefHeight="54.0" prefWidth="100.0" text="Export" onAction="#expButtonAction"/>
+            <Button id="DelButton" fx:id="DelButton" layoutX="738.0" layoutY="492.0" onAction="#delButtonAction" prefHeight="54.0" prefWidth="100.0" text="Delete" />
+            <Button id="ExpButton" fx:id="ExpButton" layoutX="738.0" layoutY="566.0" onAction="#expButtonAction" prefHeight="54.0" prefWidth="100.0" text="Export" />
             <TextField id="ExpText" fx:id="ExpText" layoutX="354.0" layoutY="583.0" prefHeight="44.0" prefWidth="294.0" promptText="file name" style="-fx-text-fill: Grey;" />
             <Label id="ExpLabel" fx:id="ExpLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="121.0" layoutY="580.0" prefHeight="44.0" prefWidth="219.0" text="Save the table to Pdf as:" />
          </children></Pane>

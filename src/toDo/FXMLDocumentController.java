@@ -96,26 +96,15 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private TableColumn<Data, String>tc4;
     @FXML
-    private TableColumn<Data, CheckBox>tc5;
-    @FXML
     private Button DelButton;
     @FXML
     private Button ExpButton;
-
- //   Db db = new Db();
     
-    CheckBox checkBox = new CheckBox();
     
     Connection cn;
 
     @FXML
     private ObservableList<Data> info = FXCollections.observableArrayList();
-
-//    @FXML
-//    private ObservableList<Data> aD = FXCollections.observableArrayList();
-    
-//    @FXML
-//    private final ObservableList<Data> delList = FXCollections.observableArrayList();
     
     public void Date(ActionEvent event) {
     LocalDate ld = datePicker.getValue();
@@ -144,7 +133,6 @@ public class FXMLDocumentController implements Initializable {
               loadDataFromDatabase();
        
         }
-//    }
 
     @FXML
     private void handleButtonAlert(ActionEvent event) {
