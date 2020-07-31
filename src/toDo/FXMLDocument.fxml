@@ -17,7 +17,7 @@
             <TextField id="TaskText" fx:id="TaskText" layoutX="354.0" layoutY="517.0" prefHeight="44.0" prefWidth="219.0" />
             <DatePicker id="datePicker" fx:id="datePicker" editable="false" layoutX="354.0" layoutY="394.0" prefHeight="44.0" prefWidth="269.0" showWeekNumbers="true" />
             <TextField id="OwnerText" fx:id="OwnerText" layoutX="354.0" layoutY="455.0" prefHeight="44.0" prefWidth="219.0" />
-            <TableView id="table" fx:id="table" editable="true" layoutX="106.0" layoutY="48.0" prefHeight="316.0" prefWidth="723.0">
+            <TableView id="table" fx:id="table" editable="true" layoutX="106.0" layoutY="48.0" prefHeight="316.0" prefWidth="722.0">
                <columns>
                   <TableColumn id="tc1" fx:id="tc1" prefWidth="64.0" text="No." />
                   <TableColumn id="tc2" fx:id="tc2" prefWidth="204.0" text="Date" />
@@ -38,5 +38,15 @@
                </font></Label>
             <Button id="alertButton" fx:id="alertButton" alignment="CENTER" contentDisplay="CENTER" layoutX="436.0" layoutY="435.0" mnemonicParsing="false" onAction="#handleButtonAlert" prefHeight="54.0" prefWidth="142.0" text="Back" textAlignment="CENTER" />
          </children></Pane>
+      <Pane id="selDatePane" fx:id="selDatePane" layoutX="5.0" layoutY="8.0" prefHeight="643.0" prefWidth="958.0" visible="false">
+         <children>
+            <Label id="selDateText" fx:id="selDateText" alignment="CENTER" contentDisplay="CENTER" layoutX="171.0" layoutY="127.0" opacity="0.77" prefHeight="405.0" prefWidth="625.0" text="The earliest selectable date is today" textAlignment="CENTER">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Button id="selDateButton" fx:id="selDateButton1" alignment="CENTER" contentDisplay="CENTER" layoutX="436.0" layoutY="435.0" mnemonicParsing="false" onAction="#handleButtonSelDate" prefHeight="54.0" prefWidth="142.0" text="Back" textAlignment="CENTER" />
+         </children>
+      </Pane>
     </children>
 </AnchorPane>
